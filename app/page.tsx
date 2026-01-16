@@ -7,8 +7,8 @@ export default async function Page() {
   const nextStart =
     process.env.NEXT_PUBLIC_NEXT_VOTING_START_ISO || new Date(Date.now() + 4 * 864e5).toISOString();
 
-  const state = await getPublicState();
-
+  const state = { projectsRemaining: 16, votesCast: 0, activeMatchups: 8 };
+  
   return (
     <>
       <div className="topbar">
