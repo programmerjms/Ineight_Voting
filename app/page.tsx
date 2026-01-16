@@ -1,7 +1,6 @@
 import Countdown from "@/components/Countdown";
 import Bracket from "@/components/Bracket";
 import { projects, round1 } from "@/lib/bracketData";
-import { getPublicState } from "@/lib/state";
 
 export default async function Page() {
   const votingStatus = (process.env.NEXT_PUBLIC_VOTING_STATUS || "closed") as "open" | "closed";
